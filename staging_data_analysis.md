@@ -2,9 +2,9 @@
 
 Below are SQL queries designed to analyze the quality and consistency of a dataset. The results are presented in Markdown tables for clarity.
 
-[Staging Diagram](img\dwh_stg_diagram.png)
+[Staging Diagram](https://github.com/TenebrisX/de-project-sprint-6/blob/main/img/dwh_stg_diagram.png)
 
-[SQL-Scripts](src\sql\staging_data_exploration.sql)
+[SQL-Scripts](https://github.com/TenebrisX/de-project-sprint-6/blob/main/src/sql/staging_data_exploration.sql)
 1. [Count of Records in Users, Groups, and Dialogs](#count-of-records-in-users-groups-and-dialogs)
 2. [Count of Hashed Group Names in Groups](#count-of-hashed-group-names-in-groups)
 3. [Count and Sum of Ages in Users](#count-and-sum-of-ages-in-users)
