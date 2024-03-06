@@ -1,11 +1,5 @@
 # DataVault ETL Project
 
-## Table of Contents
-
-1. [Overview](#overview)
-2. [Technologies Used](#technologies-used)
-3. [Analysis and Queries](#analysis-and-queries)
-
 ## Overview
 
 This project involves the extraction, transformation, and loading (ETL) of data from AWS S3 to a Vertica database. The ETL pipeline is orchestrated using Apache Airflow and containerized using Docker. SQL and Python are the primary languages for data manipulation and analysis.
