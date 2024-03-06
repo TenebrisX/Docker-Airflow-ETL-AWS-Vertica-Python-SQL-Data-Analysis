@@ -4,8 +4,7 @@
 
 1. [Overview](#overview)
 2. [Technologies Used](#technologies-used)
-3. [Project Structure](#project-structure)
-6. [Analysis and Queries](#analysis-and-queries)
+3. [Analysis and Queries](#analysis-and-queries)
 
 ## Overview
 
@@ -19,13 +18,6 @@ This project involves the extraction, transformation, and loading (ETL) of data 
 * **Docker:** Containerization for streamlined development and deployment.
 * **SQL:**  For querying and manipulating data within Vertica.
 * **Python:**  For data transformation and pipeline logic.
-
-## Project Structure
-
-project_root/
-├── src/dags/            # Directory for Airflow DAGs
-├── src/sql/             # Vertica SQL scripts (DDL, queries, etc.)
-├── img/                 # Layer Diagrams
 
 ## Analysis and Queries
 
