@@ -1,8 +1,8 @@
 ## DDS Analytics Queries
 
-[DDS Schema](img\dwh_dds_data_vault_diagram.png)
+[DDS Data Vault Diagram](https://github.com/TenebrisX/de-project-sprint-6/blob/main/img/dwh_dds_data_vault_diagram.png)
 
-[SQL Scripts](src\sql\analysis.sql)
+[SQL Scripts](https://github.com/TenebrisX/de-project-sprint-6/blob/main/src/sql/analysis.sql)
 1. [Age Distribution](#age-distribution)
 2. [User Group Message Activity Analysis](#user-group-message-activity-analysis)
 3. [User Addition Analysis for Early Groups](#user-addition-analysis-for-early-groups)
