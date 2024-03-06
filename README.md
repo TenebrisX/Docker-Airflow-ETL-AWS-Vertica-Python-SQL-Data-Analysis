@@ -1,40 +1,34 @@
-# Проект 6-го спринта
+# DataVault ETL Project
 
-### Описание
-Репозиторий предназначен для сдачи проекта 6-го српинта
+## Table of Contents
 
-### Как работать с репозиторием
-1. В вашем GitHub-аккаунте автоматически создастся репозиторий `de-project-sprint-6` после того, как вы привяжете свой GitHub-аккаунт на Платформе.
-2. Скопируйте репозиторий на свой локальный компьютер, в качестве пароля укажите ваш `Access Token` (получить нужно на странице [Personal Access Tokens](https://github.com/settings/tokens)):
-	* `git clone https://github.com/{{ username }}/de-project-sprint-6.git`
-3. Перейдите в директорию с проектом: 
-	* `cd de-project-sprint-6`
-4. Выполните проект и сохраните получившийся код в локальном репозитории:
-	* `git add .`
-	* `git commit -m 'my best commit'`
-5. Обновите репозиторий в вашем GutHub-аккаунте:
-	* `git push origin main`
+1. [Overview](#overview)
+2. [Technologies Used](#technologies-used)
+3. [Project Structure](#project-structure)
+6. [Analysis and Queries](#analysis-and-queries)
 
-### Структура репозитория
-- `/src/dags`
+## Overview
 
-### Как запустить контейнер
-Запустите локально команду:
-```
-docker run \
--d \
--p 3000:3000 \
--p 3002:3002 \
--p 15432:5432 \
---mount src=airflow_sp5,target=/opt/airflow \
---mount src=lesson_sp5,target=/lessons \
---mount src=db_sp5,target=/var/lib/postgresql/data \
---name=de-sprint-5-server-local \
-cr.yandex/crp1r8pht0n0gl25aug1/de-pg-cr-af:latest
-```
+This project involves the extraction, transformation, and loading (ETL) of data from AWS S3 to a Vertica database. The ETL pipeline is orchestrated using Apache Airflow and containerized using Docker. SQL and Python are the primary languages for data manipulation and analysis.
 
-После того как запустится контейнер, вам будут доступны:
-- Airflow
-	- `localhost:3000/airflow`
-- БД
-	- `jovyan:jovyan@localhost:15432/de`
+## Technologies Used
+
+* **AWS S3:**  Object storage for raw data.
+* **Vertica:** Columnar database for high-performance analytics.
+* **Apache Airflow:**  Workflow orchestration tool to manage the ETL pipeline.
+* **Docker:** Containerization for streamlined development and deployment.
+* **SQL:**  For querying and manipulating data within Vertica.
+* **Python:**  For data transformation and pipeline logic.
+
+## Project Structure
+
+project_root/
+├── src/dags/            # Directory for Airflow DAGs
+├── src/sql/             # Vertica SQL scripts (DDL, queries, etc.)
+├── img/                 # Layer Diagrams
+
+## Analysis and Queries
+
+- Staging Data Analysis: [Link to Staging Data Analysis](staging_data_analysis.md)
+- DDS Data Analysis: [Link to DDS Data Analysis](dds_data_analysis.md)
+
